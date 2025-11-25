@@ -1,0 +1,45 @@
+.auth-page {
+  padding: 24px;
+  max-width: 480px;
+  margin: 80px auto 24px;
+  background: #f7fff7;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.auth-form {
+  display: grid;
+  gap: 12px;
+}
+
+.auth-form label {
+  text-align: left;
+  font-weight: 600;
+  color: #1e5631;
+}
+
+.auth-form input {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #cce3cc;
+}
+
+.auth-form button {
+  background: #2e8b57;
+  color: #fff;
+}
+
+.auth-switch {
+  margin-top: 12px;
+}
+
+.google-btn {
+  margin-top: 12px;
+  background: #fff;
+  color: #1e5631;
+  border: 1px solid #cce3cc;
+}
+.google-btn:hover {
+  background: #f2fff2;
+}
+

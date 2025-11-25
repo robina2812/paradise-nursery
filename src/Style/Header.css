@@ -1,0 +1,115 @@
+/* ===== HEADER LAYOUT ===== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e6f5e6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+   gap: 20px; 
+  box-sizing: border-box;
+  flex-wrap: wrap; /* allow items to wrap instead of overflowing */
+}
+
+/* ===== LOGO ===== */
+.logo-section {
+  display: flex;
+  align-items: center;
+
+   
+}
+
+.logo-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* ===== NAVIGATION ===== */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-grow: 1;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #2e8b57;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #1e5631;
+}
+
+/* ===== LOGIN BUTTON ===== */
+.login-section {
+  display: flex;
+  align-items: center;
+   margin-left: auto;
+}
+
+.login-btn {
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-right: 0;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-btn:hover {
+  background-color: #1e5631;
+  transform: scale(1.05);
+}
+
+/* Stack earlier on medium screens to keep login button visible */
+@media (max-width: 992px) {
+  .header {
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 10px 12px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 10px 12px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .login-btn {
+    padding: 6px 14px;
+  }
+}
+
+/* ===== BODY PADDING TO AVOID OVERLAP ===== */
+body {
+  padding-top: 80px;
+}
